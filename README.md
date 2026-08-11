@@ -2,8 +2,6 @@
 
 AI Agent Skills for production-ready C/Clang projects.
 
-Inspired by [samber/cc-skills-golang](https://github.com/samber/cc-skills-golang).
-
 ## Installation
 
 ```bash
