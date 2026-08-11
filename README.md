@@ -30,25 +30,28 @@ git clone https://github.com/lobor/cc-skills-clang.git ~/.cursor/skills/cc-skill
 git clone https://github.com/lobor/cc-skills-clang.git ~/.agents/skills/cc-skills-clang
 ```
 
-## Skills (20)
+## Skills (23)
 
 ```
-                          ┌────────────────────────────────────────┐
-                          │            C/Clang Skills              │
-                          └──────────────────┬─────────────────────┘
-                                             │
-    ┌─────────────────┬──────────────────────┼──────────────────────┐
-    ▼                 ▼                      ▼                      ▼
-┌──────────────┐ ┌──────────────┐ ┌─────────────────┐ ┌──────────────────────┐
-│ Code Quality │ │ Architecture │ │   QA & Perf     │ │    Toolchain         │
-├──────────────┤ ├──────────────┤ ├─────────────────┤ ├──────────────────────┤
-│ code-style   │ │ design-patt  │ │ testing         │ │ clang                │
-│ naming       │ │ mem-safety   │ │ performance     │ │ llvm                 │
-│ error-handl  │ │ concurrency  │ │ sanitizers      │ │ clang-format         │
-│ safety       │ │              │ │ fuzzing         │ │ static-analysis      │
-│ documentation│ │              │ │ compiler-opts   │ │ kernel-style         │
-│ security     │ │              │ │                 │ │ doctrine             │
-└──────────────┘ └──────────────┘ └─────────────────┘ └──────────────────────┘
+                          ┌──────────────────────────────────────────────┐
+                          │              C/Clang Skills                  │
+                          └────────────────────┬─────────────────────────┘
+                                               │
+    ┌─────────────────┬────────────────────────┼────────────────────────┐
+    ▼                 ▼                        ▼                        ▼
+┌──────────────┐ ┌──────────────┐ ┌───────────────────┐ ┌──────────────────────┐
+│ Code Quality │ │ Architecture │ │   QA & Perf       │ │    Toolchain         │
+├──────────────┤ ├──────────────┤ ├───────────────────┤ ├──────────────────────┤
+│ code-style   │ │ design-patt  │ │ testing           │ │ clang                │
+│ naming       │ │ mem-safety   │ │ performance       │ │ llvm                 │
+│ error-handl  │ │ concurrency  │ │ sanitizers        │ │ clang-format         │
+│ safety       │ │              │ │ fuzzing           │ │ static-analysis      │
+│ documentation│ │              │ │ compiler-opts     │ │ kernel-style         │
+│ security     │ │              │ │                   │ │ doctrine             │
+│              │ │              │ │                   │ │ bounds-safety        │
+│              │ │              │ │                   │ │ assembly             │
+│              │ │              │ │                   │ │ kernel-modules       │
+└──────────────┘ └──────────────┘ └───────────────────┘ └──────────────────────┘
 ```
 
 | Skill | Category | Description |
@@ -73,6 +76,9 @@ git clone https://github.com/lobor/cc-skills-clang.git ~/.agents/skills/cc-skill
 | `clang-static-analysis` | Toolchain | clang-tidy config, PR diff analysis, auto-fix, CI integration |
 | `clang-kernel-style` | Toolchain | Tab indentation, goto cleanup, subsystem boundaries, refcounting |
 | `clang-doctrine` | Toolchain | Data supremacy, simplicity, hardware truth, bogus detector |
+| `clang-bounds-safety` | Toolchain | Apple -fbounds-safety extension, pointer annotations, bounds traps |
+| `clang-assembly` | Toolchain | x86-64 assembly, inline asm, ABI, SSE/AVX intrinsics |
+| `clang-kernel-modules` | Toolchain | LKMs, Kbuild, /proc, sysfs, character devices, KGDB |
 
 ## How Skills Work
 
