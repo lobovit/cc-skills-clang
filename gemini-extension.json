@@ -1,0 +1,19 @@
+{
+    "name": "cc-skills-clang",
+    "description": "AI Agent Skills for production-ready C/Clang projects",
+    "version": "1.0.0",
+    "author": {
+        "name": "Vitor Lobo",
+        "email": "lobor@users.noreply.github.com"
+    },
+    "homepage": "https://github.com/lobor/cc-skills-clang",
+    "repository": "https://github.com/lobor/cc-skills-clang",
+    "license": "MIT",
+    "keywords": [
+        "c",
+        "clang",
+        "llvm",
+        "ai-agent",
+        "skills"
+    ]
+}
